@@ -1,88 +1,181 @@
 <!DOCTYPE html>
   <html>
+    
      <head>
+       
+        <html lang="en">
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
      </head>
      <body>
-      <h1>
-        Welcome to My Portfolio
-      </h1>
-      <pre>
-      <form action="">     
-          <a href=""><button>About</button></a>       <a href=""><button>Skills</button></a>       <a href=""><button>Projects</button></a>       <a href=""><button>Contact</button></a>
-      </pre>
-      </form>
-      <h1>
-        Saikiranreddy Salla
-      </h1>
-      <img src="IMG_20211220_123246_750.jpg" alt="my image">
+      <header>
+        <h1>
+          Welcome to My Portfolio
+        </h1>
+       
+        <div  >
+          <a href="#About">
+            <button class="button">
+              About
+            </button>
+          </a>       
+          <a href="#skills">
+            <button class="button">
+              Skills
+            </button>
+          </a>       
+          <a href="#Projects">
+            <button class="button">
+              Projects
+            </button>
+          </a>       
+          <a href="#contact">
+            <button class="button">
+              Contact
+            </button>
+          </a>
+      
+        </div>
+           
+      
+
+      </header>
+
+      <main>
+        <section id="About">
+          <h1>
+          Saikiranreddy Salla
+          </h1>
+          <img src="IMG_20211220_123246_750.jpg" alt="my image">
+        
+        
+          <p>
+           I am a passionate full stack web developer with a focus on front-end technology as well as back-end technology(python).
+          <br>
+           I am currently pursuing my full stack web developer course.
+          <br>
+           I have completed my graduation(B.tech) in Avanthi Institute of Engineering and Technology.
+  
+          <br>
+           You can <strong>click here</strong> to check out what I learnt in in HTML CSS JS.
+  
+          </p>
+        
+
+        </section>
+        <section id="skills">
+          <h1>
+            My Skills
+          </h1>
+          <ol>
+            <li>Python Basics </li>
+            <li>HTML Basics </li>
+            <li>CSS Basics </li>
+            <li>JavaScript Basics </li>
+    
+          </ol>
+
+        </section>
+        <section id="Projects">
+          <div>
+            <h1>
+              My Projects
+            </h1>
+            <table border="1">
+              <tr>
+                <th>Projects</th>
+                <th>Discription</th>
+                
+              </tr>
+              <tr>
+                <td>prrtfolio website</td>
+                <td>I have built a Portfolio website by using HTML,CSS & JavaScript</td>
+              </tr>
+              <tr>
+                <td>python simple calculator</td>
+                <td>I have built a simple calculator in the course </td>
+              </tr>
       
       
-      <p>
-        I am a passionate full stack web developer with a focus on front-end technology as well as back-end technology(python).
-        <br>
-        I am currently pursuing my full stack web developer course.
-        <br>
-        I have completed my graduation(B.tech) in Avanthi Institute of Engineering and Technology.
+      
+      
+            </table>
+          </div>
+        </section>
+        <section id="contact">
+          <h1>Contact Me</h1>
+          <p>Feel free to get in touch with me using the form below:</p>
+          <form action="">
+            <label for="name">NAME:</label>
+            <input type="NAME" id="contact" placeholder="enter your name..." required>
+            
+            
+            <br>
+            <label for="contact">EMAIL:</label>
+            <input type="email" id="contact" placeholder="enter your email..."required >
+            <br>
+            
+            <label for="maleradio">male</label>
+            <input type="radio" id="maleradio" name="gender" value="male">
+            
+            <label for="femaleradio">female</label>
+            <input type="radio" id="femaleradio" name="gender" value="female">
+            <br>
+            
+            <label for="check">coding</label>
+            <input type="checkbox" id="check" name="gender" value="coding">
+            <label for="check2">Reading</label>
+            
+            <input type="checkbox" id="check2" name="gender" value="Reading">
+    
+            
+            <br>
+            <label for="bio">Bio (up to 200 characters):</label>
+            
+            <input type="text" id="bio" name="gender" max="200">
+            <br>
+            <pre>              <button class="submit">submit</button>     </pre>
+           
+    
+            
+            
+            
+    
+    
+    
+    
+    
+          </form>
+        </section>
+      
+      
+     
+      
 
-        <br>
-        You can <strong>click here</strong> to check out what I learnt in in HTML CSS JS.
+     
 
-      </p>
-      <h1>
-        My Skills
-      </h1>
-      <ol>
-        <li>Python Basics </li>
-        <li>HTML Basics </li>
-        <li>CSS Basics </li>
-        <li>JavaScript Basics </li>
+      </main>
+      <a href="">
+        <button class="fixedbutton">Top</button>
+        
 
-      </ol>
-      <h1>Contact Me</h1>
-      <p>Feel free to get in touch with me using the form below:</p>
-      <form action="">
-        <label for="name">NAME:</label>
-        <input type="NAME" id="contact" placeholder="enter your name" required>
-        
-        <br>
-        <br>
-        <label for="contact">EMAIL:</label>
-        <input type="email" id="contact" placeholder="enter your email"required >
-        <br>
-        <br>
-        <label for="maleradio">male</label>
-        <input type="radio" id="maleradio" name="gender" value="male">
-        
-        <label for="femaleradio">female</label>
-        <input type="radio" id="femaleradio" name="gender" value="female">
-        <br>
-        <br>
-        <label for="check">coding</label>
-        <input type="checkbox" id="check" name="gender" value="coding">
-        <label for="check2">Reading</label>
-        
-        <input type="checkbox" id="check2" name="gender" value="Reading">
 
-        <br>
-        <br>
-        <label for="bio">Bio (up to 200 characters):</label>
-        
-        <input type="text" id="bio" name="gender" max="200">
-        <br>
-        <pre>              <button>submit</button>     </pre>
+      </a>
+      <footer>
+       
+        ©   2024 my Portfolio
        
 
-        
-        
-        
 
 
-
-
-
-      </form>
+      </footer>
+      
+      
    
-     </body>
+      </body>
 
 
   </html>
